@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { walletOperations } from "./operations";
-import { toast } from 'react-toastify';
+import { toast } from "react-toastify";
 
 const handlePending = (state) => {
   state.isLoading = true;
@@ -32,7 +32,9 @@ const walletSlice = createSlice({
         state.error = null;
         state.currentAddress = action.payload.currentAddress;
         state.currentBalance = action.payload.currentBalance;
-        toast.success('Connected to the wallet successfully!');
+        if (!state.hash) {
+          toast.success("Connected to the wallet successfully!");
+        }
       })
       .addCase(walletOperations.connectToWallet.rejected, handleRejected)
       .addCase(walletOperations.disconnectFromWallet.pending, handlePending)
@@ -43,7 +45,7 @@ const walletSlice = createSlice({
           state.error = null;
           state.currentAddress = action.payload;
           state.currentBalance = action.payload;
-          toast.success('Disconnect from the wallet successfully!');
+          toast.success("Disconnect from the wallet successfully!");
         }
       )
       .addCase(walletOperations.disconnectFromWallet.rejected, handleRejected)
