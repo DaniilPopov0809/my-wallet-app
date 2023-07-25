@@ -12,6 +12,7 @@
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
+    "@ethersproject/providers": "^5.7.2",
     "@reduxjs/toolkit": "^1.9.5",
     "@walletconnect/web3-provider": "^1.8.0",
     "@web3modal/ethereum": "^2.7.0",
@@ -20,6 +21,7 @@
     "ethers": "^5.7.2",
     "formik": "^2.4.2",
     "globalthis": "^1.0.3",
+    "init": "^0.1.2",
     "react": "^18.2.0",
     "react-bootstrap": "^2.8.0",
     "react-dom": "^18.2.0",
