@@ -1,13 +1,13 @@
 import React from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import Logo from "../Logo/Logo";
-import WalletInfo from "../walletInfo/walletInfo";
+import WalletInfo from "../WalletInfo/WalletInfo";
 import { selectCurrentAddress } from "../../redux/walletSelector";
 import { useSelector } from "react-redux";
 import { walletOperations } from "../../redux/operations";
 import WalletButton from "../WalletButton/WalletButton";
 import { TextLogo } from "./Header.styled";
-import Web3WalletModal from "../web3Modal/web3Modal";
+// import Web3WalletModal from "../web3Modal/web3Modal";
 
 const Header = () => {
   const currentAddress = useSelector(selectCurrentAddress);
