@@ -13,3 +13,10 @@ export const Link = styled.a`
     scale: 1.02;
   }
 `;
+
+export const Wrap = styled.div`
+  width: 50%;
+  @media (min-width: 992px) {
+    width: auto;
+  }
+`;

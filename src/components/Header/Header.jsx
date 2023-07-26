@@ -6,7 +6,7 @@ import { selectCurrentAddress } from "../../redux/walletSelector";
 import { useSelector } from "react-redux";
 import { walletOperations } from "../../redux/operations";
 import WalletButton from "../WalletButton/WalletButton";
-import { TextLogo, Link } from "./Header.styled";
+import { TextLogo, Link, Wrap } from "./Header.styled";
 
 const Header = () => {
   const currentAddress = useSelector(selectCurrentAddress);
@@ -31,7 +31,7 @@ const Header = () => {
             id="basic-navbar-nav"
             className="justify-content-end"
           >
-              <div className="d-flex flex-column flex-lg-row py-3 py-lg-0">
+              <Wrap className="d-flex flex-column flex-lg-row py-3 py-lg-0">
                 {currentAddress ? (
                   <WalletInfo cls={"mb-2 mb-lg-0 me-lg-3 d-flex flex-column flex-lg-row"} />
                 ) : (
@@ -47,7 +47,7 @@ const Header = () => {
                   nameButton={"Disconnect"}
                 />
               )}
-            </div>
+            </Wrap>
           </Navbar.Collapse>
         </Container>
       </Navbar>

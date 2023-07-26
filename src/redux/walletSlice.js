@@ -28,13 +28,14 @@ const walletSlice = createSlice({
     builder
       .addCase(walletOperations.connectToWallet.pending, handlePending)
       .addCase(walletOperations.connectToWallet.fulfilled, (state, action) => {
+        if (!state.hash && !state.error) {
+          toast.success("Connected to the wallet successfully!");
+        }
         state.isLoading = false;
         state.error = null;
         state.currentAddress = action.payload.currentAddress;
         state.currentBalance = action.payload.currentBalance;
-        if (!state.hash || state.error) {
-          toast.success("Connected to the wallet successfully!");
-        }
+        
       })
       .addCase(walletOperations.connectToWallet.rejected, handleRejected)
       .addCase(walletOperations.disconnectFromWallet.pending, handlePending)
