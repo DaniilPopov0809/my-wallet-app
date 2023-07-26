@@ -2,7 +2,7 @@ import React from "react";
 import { toast } from "react-toastify";
 import { useDispatch, useSelector } from "react-redux";
 import { walletOperations } from "../../redux/operations";
-import { Form, Button } from "react-bootstrap";
+import { Form, Button, Container } from "react-bootstrap";
 import { useFormik } from "formik";
 import validationTransactionForm from "../../helpers/validationTransactionForm";
 import { StyledInput, ErrorField } from "./TransactionForm.styled";
@@ -26,7 +26,6 @@ function TransactionForm() {
     validationSchema: validationTransactionForm,
 
     onSubmit: async (values, { resetForm, setSubmitting }) => {
-      
       if (!currentAddress) {
         toast.info("Please, connect to you wallet!");
       } else {
@@ -44,55 +43,61 @@ function TransactionForm() {
     },
   });
   return (
-    <Form
-      onSubmit={formik.handleSubmit}
-      className="border rounded p-3 text-center"
-      style={{ margin: "auto", maxWidth: "600px" }}
+    <Container
+      as="section"
+      className="py-4 px-0 d-flex flex-1 flex-column align-items-center"
     >
-      <Form.Group className="mb-3 text-start">
-        <Form.Label>Wallet address</Form.Label>
-        <StyledInput
-          type="text"
-          placeholder="Enter wallet address (0x...)"
-          name="walletAddress"
-          onChange={formik.handleChange}
-          onBlur={formik.handleBlur}
-          value={formik.values.walletAddress}
-          className={
-            formik.touched.walletAddress && formik.errors.walletAddress
-              ? "error"
-              : ""
-          }
-        />
-        {formik.touched.walletAddress && formik.errors.walletAddress ? (
-          <ErrorField>{formik.errors.walletAddress}</ErrorField>
-        ) : null}
-      </Form.Group>
+      <h1 className="mb-4">Transaction form</h1>
+      <Form
+        onSubmit={formik.handleSubmit}
+        className="border rounded p-3 text-center container-lg"
+        style={{ maxWidth: "600px" }}
+      >
+        <Form.Group className="mb-3 text-start">
+          <Form.Label>Wallet address</Form.Label>
+          <StyledInput
+            type="text"
+            placeholder="Enter wallet address (0x...)"
+            name="walletAddress"
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+            value={formik.values.walletAddress}
+            className={
+              formik.touched.walletAddress && formik.errors.walletAddress
+                ? "error"
+                : ""
+            }
+          />
+          {formik.touched.walletAddress && formik.errors.walletAddress ? (
+            <ErrorField>{formik.errors.walletAddress}</ErrorField>
+          ) : null}
+        </Form.Group>
 
-      <Form.Group className="mb-3 text-start">
-        <Form.Label>Amount ETH</Form.Label>
-        <StyledInput
-          type="text"
-          placeholder="Enter amount ETH"
-          name="amountETH"
-          onChange={formik.handleChange}
-          onBlur={formik.handleBlur}
-          value={formik.values.amountETH}
-          className={
-            formik.touched.amountETH && formik.errors.amountETH ? "error" : ""
-          }
-        />
-        {formik.touched.amountETH && formik.errors.amountETH ? (
-          <ErrorField>{formik.errors.amountETH}</ErrorField>
-        ) : null}
-      </Form.Group>
-      <Button variant="primary" type="submit" disabled={formik.isSubmitting}>
-        {currentAddress && isLoading && (
-          <Spinner animation="border" role="status" size="sm"></Spinner>
-        )}{" "}
-        Send ETH
-      </Button>
-    </Form>
+        <Form.Group className="mb-3 text-start">
+          <Form.Label>Amount ETH</Form.Label>
+          <StyledInput
+            type="text"
+            placeholder="Enter amount ETH"
+            name="amountETH"
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+            value={formik.values.amountETH}
+            className={
+              formik.touched.amountETH && formik.errors.amountETH ? "error" : ""
+            }
+          />
+          {formik.touched.amountETH && formik.errors.amountETH ? (
+            <ErrorField>{formik.errors.amountETH}</ErrorField>
+          ) : null}
+        </Form.Group>
+        <Button variant="primary" type="submit" disabled={formik.isSubmitting}>
+          {currentAddress && isLoading && (
+            <Spinner animation="border" role="status" size="sm"></Spinner>
+          )}{" "}
+          Send ETH
+        </Button>
+      </Form>
+    </Container>
   );
 }
 

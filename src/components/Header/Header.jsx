@@ -6,7 +6,7 @@ import { selectCurrentAddress } from "../../redux/walletSelector";
 import { useSelector } from "react-redux";
 import { walletOperations } from "../../redux/operations";
 import WalletButton from "../WalletButton/WalletButton";
-import { TextLogo } from "./Header.styled";
+import { TextLogo, Link } from "./Header.styled";
 
 const Header = () => {
   const currentAddress = useSelector(selectCurrentAddress);
@@ -16,15 +16,15 @@ const Header = () => {
       <Navbar bg="secondary" expand="lg" variant="light">
         <Container>
           <Navbar.Brand>
-            <a
+            <Link
               href={"/"}
-              className="text-decoration-none d-flex align-items-center"
+              className="text-decoration-none d-flex align-items-center btn btn-link p-0"
             >
               <Logo />
               <TextLogo className="">
                 <span className="text-dark">WaLL</span>eT
               </TextLogo>
-            </a>
+            </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse
