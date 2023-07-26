@@ -7,7 +7,6 @@ import { useSelector } from "react-redux";
 import { walletOperations } from "../../redux/operations";
 import WalletButton from "../WalletButton/WalletButton";
 import { TextLogo } from "./Header.styled";
-// import Web3WalletModal from "../web3Modal/web3Modal";
 
 const Header = () => {
   const currentAddress = useSelector(selectCurrentAddress);
@@ -30,19 +29,17 @@ const Header = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse
             id="basic-navbar-nav"
-            className="d-flex justify-content-end"
+            className="justify-content-end"
           >
-            <div className="d-flex md-auto">
-              
-              {currentAddress ? (
-                <WalletInfo />
-              ) : (
-                // <Web3WalletModal />
-                <WalletButton
-                  operation={walletOperations.connectToWallet}
-                  nameButton={"Connect wallet"}
-                />
-              )}
+              <div className="d-flex flex-column flex-lg-row py-3">
+                {currentAddress ? (
+                  <WalletInfo cls={"mb-2 mb-lg-0 me-lg-3 d-flex flex-column flex-lg-row"} />
+                ) : (
+                  <WalletButton
+                    operation={walletOperations.connectToWallet}
+                    nameButton={"Connect wallet"}
+                  />
+                )}
 
               {currentAddress && (
                 <WalletButton

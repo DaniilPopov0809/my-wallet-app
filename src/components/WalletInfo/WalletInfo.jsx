@@ -11,7 +11,7 @@ import ToolTipMes from "../ToolTip/ToolTip";
 import { toast } from "react-toastify";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
-const WalletInfo = () => {
+const WalletInfo = ({cls}) => {
   const currentAddress = useSelector(selectCurrentAddress);
   const currentBalance = useSelector(selectCurrentBalance);
 
@@ -20,10 +20,10 @@ const WalletInfo = () => {
   }
 
   return (
-    <div className="me-3">
+    <div className={cls}>
       <CopyToClipboard text={currentAddress} onCopy={handleClick}>
       <Button
-        className="me-3 border rounded bg-transparent fullAddress"
+        className="me-lg-3 mb-2 mb-lg-0 border rounded bg-transparent fullAddress"
         data-tooltip-content={currentAddress}
       >
         {shortAddress(currentAddress)}

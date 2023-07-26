@@ -1,5 +1,6 @@
 const roundUpBalance = (str) => {
-    return parseFloat(str).toFixed(3).toString();
+    const toNumber = parseFloat(str);
+    return (Math.floor(toNumber *1000) / 1000).toString();
 }
 
 export default roundUpBalance;

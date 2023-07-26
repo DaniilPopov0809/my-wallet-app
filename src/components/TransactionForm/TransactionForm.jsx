@@ -26,7 +26,7 @@ function TransactionForm() {
     validationSchema: validationTransactionForm,
 
     onSubmit: async (values, { resetForm, setSubmitting }) => {
-  
+      
       if (!currentAddress) {
         toast.info("Please, connect to you wallet!");
       } else {
