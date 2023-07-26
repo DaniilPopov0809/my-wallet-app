@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import  walletSlice  from "./walletSlice";
+import walletSlice from "./walletSlice";
 import storage from "redux-persist/lib/storage";
 import {
   persistStore,
@@ -15,6 +15,7 @@ import {
 const persistConfig = {
   key: "root",
   storage,
+  whitelist: ["currentAddress", "currentBalance"],
 };
 
 export const store = configureStore({

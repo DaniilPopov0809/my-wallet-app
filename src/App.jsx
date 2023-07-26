@@ -10,11 +10,9 @@ function App() {
       <Header />
       <main>
         <Container>
-          
           <TransactionForm />
-         
         </Container>
-        </main>
+      </main>
       <Footer />
     </div>
   );

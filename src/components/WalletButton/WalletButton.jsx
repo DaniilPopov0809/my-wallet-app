@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Button } from "react-bootstrap";
 import Spinner from "react-bootstrap/Spinner";
 import { useDispatch, useSelector } from "react-redux";
@@ -20,4 +21,10 @@ const WalletButton = ({ operation, nameButton }) => {
     </Button>
   );
 };
+
+WalletButton.propTypes = {
+  operation: PropTypes.func.isRequired,
+  nameButton: PropTypes.string.isRequired,
+};
+
 export default WalletButton;

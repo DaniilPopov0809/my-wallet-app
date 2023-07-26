@@ -20,7 +20,7 @@ const sendEth = createAsyncThunk(
   
       return sendTransaction.hash;
     } catch (error) {
-      return thunkAPI.rejectWithValue(error.message);
+      return thunkAPI.rejectWithValue("Transaction error!");
     }
   });
 

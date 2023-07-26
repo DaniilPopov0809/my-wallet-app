@@ -32,7 +32,7 @@ const walletSlice = createSlice({
         state.error = null;
         state.currentAddress = action.payload.currentAddress;
         state.currentBalance = action.payload.currentBalance;
-        if (!state.hash) {
+        if (!state.hash || state.error) {
           toast.success("Connected to the wallet successfully!");
         }
       })

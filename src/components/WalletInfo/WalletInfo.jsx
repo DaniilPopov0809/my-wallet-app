@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { useSelector } from "react-redux";
 import {
   selectCurrentAddress,
@@ -45,6 +46,10 @@ const WalletInfo = ({cls}) => {
       />
     </div>
   );
+};
+
+WalletInfo.propTypes = {
+  cls: PropTypes.string.isRequired,
 };
 
 export default WalletInfo;
