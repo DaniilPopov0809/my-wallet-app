@@ -12,7 +12,7 @@ const WalletButton = ({ operation, nameButton }) => {
     dispatch(operation());
   };
   return (
-    <Button type="button" onClick={handleClick}>
+    <Button type="button" onClick={handleClick} disabled={isLoading}>
       {nameButton === "Connect wallet" && isLoading && (
         <Spinner animation="border" role="status" size="sm"></Spinner>
       )}{" "}

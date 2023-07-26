@@ -31,7 +31,7 @@ const Header = () => {
             id="basic-navbar-nav"
             className="justify-content-end"
           >
-              <div className="d-flex flex-column flex-lg-row py-3">
+              <div className="d-flex flex-column flex-lg-row py-3 py-lg-0">
                 {currentAddress ? (
                   <WalletInfo cls={"mb-2 mb-lg-0 me-lg-3 d-flex flex-column flex-lg-row"} />
                 ) : (

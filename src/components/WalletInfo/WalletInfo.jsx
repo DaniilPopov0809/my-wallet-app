@@ -24,7 +24,6 @@ const WalletInfo = ({cls}) => {
       <CopyToClipboard text={currentAddress} onCopy={handleClick}>
       <Button
         className="me-lg-3 mb-2 mb-lg-0 border rounded bg-transparent fullAddress"
-        data-tooltip-content={currentAddress}
       >
         {shortAddress(currentAddress)}
       </Button>
@@ -32,7 +31,7 @@ const WalletInfo = ({cls}) => {
       <ToolTipMes
         anchor={".fullAddress"}
         position={"bottom"}
-        content={currentAddress}
+        content={`Wallet: ${currentAddress}`}
       />
       <CopyToClipboard text={currentBalance} onCopy={handleClick}>
       <Button className="border rounded bg-transparent fullBalance">{`${roundUpBalance(
@@ -42,7 +41,7 @@ const WalletInfo = ({cls}) => {
       <ToolTipMes
         anchor={".fullBalance"}
         position={"bottom"}
-        content={`${currentBalance} ETH`}
+        content={`Balance: ${currentBalance} ETH`}
       />
     </div>
   );

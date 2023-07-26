@@ -4,7 +4,7 @@ import { Container } from "react-bootstrap";
 const Footer = () => {
   return (
     <footer className="bg-secondary text-center text-light mt-auto">
-      <Container className=" p-3">
+      <Container className=" py-3">
         <p className="mb-1">
           All rights reserved © {new Date().getFullYear()} by Daniil Popov
         </p>

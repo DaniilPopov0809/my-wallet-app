@@ -9,11 +9,13 @@ function App() {
     <div className="min-vh-100 d-flex flex-column">
       <Header />
       <main>
-        <Container className="py-4 d-flex flex-1 flex-column align-items-center">
+        <Container>
+          <section className="py-4 d-flex flex-1 flex-column align-items-center">
           <h1 className="mb-4">Transaction form</h1>
           <TransactionForm />
+          </section>
         </Container>
-      </main>
+        </main>
       <Footer />
     </div>
   );
