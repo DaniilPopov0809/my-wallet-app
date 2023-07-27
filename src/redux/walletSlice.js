@@ -13,6 +13,7 @@ const handleRejected = (state, action) => {
 };
 
 const initialState = {
+  isConnect: false,
   currentAddress: null,
   currentBalance: null,
   hash: null,
@@ -33,6 +34,7 @@ const walletSlice = createSlice({
         }
         state.isLoading = false;
         state.error = null;
+        state.isConnect = true;
         state.currentAddress = action.payload.currentAddress;
         state.currentBalance = action.payload.currentBalance;
         
@@ -44,6 +46,7 @@ const walletSlice = createSlice({
         (state, action) => {
           state.isLoading = false;
           state.error = null;
+          state.isConnect = false;
           state.currentAddress = action.payload;
           state.currentBalance = action.payload;
           toast.success("Disconnect from the wallet successfully!");
