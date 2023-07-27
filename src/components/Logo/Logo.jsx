@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../assets/logo.svg";
+import logo from "../../img/logo.svg";
 import { Image } from "react-bootstrap";
 
 const Logo = () => {

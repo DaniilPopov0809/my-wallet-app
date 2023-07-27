@@ -3,7 +3,7 @@
 ## Зовнішній вигляд
 
 ### Desktop
-![Зовнішній вигляд](https://github.com/DaniilPopov0809/my-wallet-app/assets/104567066/3b923745-9a18-4a2c-9530-16ac0e8c27b3)
+![Зовнішній вигляд](./assets/desktop_overview.gif)
 
 ### Mobile
 ![Зовнішній вигляд](./assets/test1.gif)
