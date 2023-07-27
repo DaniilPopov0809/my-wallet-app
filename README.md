@@ -6,7 +6,7 @@
 ![Зовнішній вигляд](./assets/desktop_overview.gif)
 
 ### Mobile
-![Зовнішній вигляд](./assets/view.jpg)
+![Зовнішній вигляд](./assets/test.gif)
 ## Опис проекту
 
 Веб-додаток, для роботи з токенами в мережі Ethereum Goerli на мобільних та десктопних пристроях.
@@ -22,10 +22,10 @@
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Redux Toolkit](https://img.shields.io/badge/redux-36084F?style=for-the-badge&logo=Redux&logoColor=A50EF7)  
 ![Vite](https://img.shields.io/badge/Vite-000000?style=for-the-badge&logo=vite)
 ![React-bootstrap](https://img.shields.io/badge/Reactbootstrap-35FFF8?style=for-the-badge)
 ![Emotion](https://img.shields.io/badge/emotion-ED0B2F?style=for-the-badge)
-![Redux Toolkit](https://img.shields.io/badge/redux-36084F?style=for-the-badge&logo=Redux&logoColor=A50EF7)  
 ![Web3Modal](https://img.shields.io/badge/Web3Modal-20232A?style=for-the-badge)
 ![Ethers.js](https://img.shields.io/badge/ethers.js-F4350C?style=for-the-badge)
 ![Formik](https://img.shields.io/badge/Formik-090000?style=for-the-badge)
@@ -35,7 +35,7 @@
 ## Реалізація проекту:
 
 - Проект зібраний за допомогою [Vite](https://vitejs.dev/).
-- Компоненти створені з використанням бібліотеки [react-bootstrap](https://react-bootstrap.netlify.app/)
+- Компоненти створені з використанням бібліотеки [React-bootstrap](https://react-bootstrap.netlify.app/)
 - У проекті використовується бібліотека управління станом [ReduxToolkit](https://redux-toolkit.js.org/).
 - Необхідні дані зберігаються в `localStorage` використанням бібліотеки [Redux Persist](https://www.npmjs.com/package/redux-persist)
 
@@ -50,7 +50,7 @@
 5. За необхідністю є можливість скопіювати адресу та баланс гаманця натиснувши на відповідні поля.
 
 ## Посилання на веб-додаток:
-![Посилання на веб-додаток](https://my-wallet-app-black.vercel.app/)
+[Посилання на веб-додаток](https://my-wallet-app-black.vercel.app/)
 
 ## Тестове завдання:
-![Тестове завдання](https://docs.google.com/document/d/19J4foINdh6IiC766zgXiU9EAIxNMc75fqWbqEcP_4Ms/edit?usp=sharing)
+[Тестове завдання](https://docs.google.com/document/d/19J4foINdh6IiC766zgXiU9EAIxNMc75fqWbqEcP_4Ms/edit?usp=sharing)
