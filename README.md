@@ -6,9 +6,9 @@
 ![Зовнішній вигляд](https://github.com/DaniilPopov0809/my-wallet-app/assets/104567066/3b923745-9a18-4a2c-9530-16ac0e8c27b3)
 
 ### Mobile
-![Зовнішній вигляд](./assets/test1.gif)
+![Зовнішній вигляд](.src/assets/test1.gif)
 
-
+## Опис проекту
 
 Веб-додаток, для роботи з токенами в мережі Ethereum Goerli на мобільних та десктопних пристроях.
 
