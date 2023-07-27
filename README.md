@@ -6,7 +6,7 @@
 ![Зовнішній вигляд](https://github.com/DaniilPopov0809/my-wallet-app/assets/104567066/3b923745-9a18-4a2c-9530-16ac0e8c27b3)
 
 ### Mobile
-![Зовнішній вигляд](.src/assets/test1.gif)
+![Зовнішній вигляд](./assets/test1.gif)
 
 ## Опис проекту
 
