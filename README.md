@@ -3,7 +3,7 @@
 ## Зовнішній вигляд
 
 ### Desktop
-![Зовнішній вигляд](./assets/view.jpg)
+![Зовнішній вигляд](./assets/desktop_overview.gif)
 
 ### Mobile
 ![Зовнішній вигляд](./assets/view.jpg)
@@ -22,7 +22,7 @@
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Vite](https://img.shields.io/badge/Vite-000000?style=for-the-badge)
+![Vite](https://img.shields.io/badge/Vite-000000?style=for-the-badge&logo=vite)
 ![React-bootstrap](https://img.shields.io/badge/Reactbootstrap-35FFF8?style=for-the-badge)
 ![Emotion](https://img.shields.io/badge/emotion-ED0B2F?style=for-the-badge)
 ![Redux Toolkit](https://img.shields.io/badge/redux-36084F?style=for-the-badge&logo=Redux&logoColor=A50EF7)  
