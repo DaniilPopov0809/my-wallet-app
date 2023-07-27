@@ -8,5 +8,5 @@ export const StyledInput = styled(Form.Control)`
 `;
 export const ErrorField = styled.div`
 font-size: 14px;
-color: red;
+color: #ff0000;
 `;
