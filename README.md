@@ -6,7 +6,7 @@
 ![Зовнішній вигляд](./assets/desktop_overview.gif)
 
 ### Mobile
-![Зовнішній вигляд](./assets/test1.gif)
+![Зовнішній вигляд](./assets/mobile_overview.gif)
 
 ## Опис проекту
 
