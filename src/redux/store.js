@@ -15,7 +15,7 @@ import {
 const persistConfig = {
   key: "root",
   storage,
-  whitelist: ["currentAddress", "currentBalance"],
+  whitelist: ["currentAddress", "currentBalance", "isConnect"],
 };
 
 export const store = configureStore({
