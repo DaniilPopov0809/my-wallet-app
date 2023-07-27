@@ -5,7 +5,7 @@
 ### Desktop
 ![Overview](./assets/desktop_overview.gif)
 
-###Mobile
+### Mobile
 ![Overview](./assets/mobile_overview.gif)
 
 ## Description of the project
